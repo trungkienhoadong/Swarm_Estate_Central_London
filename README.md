@@ -29,8 +29,8 @@ Rather than relying on a single, monolithic AI to make one slow decision, we uti
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/your-username/swarm-estate.git](https://github.com/your-username/swarm-estate.git)
-   cd swarm-estate
+   git clone https://github.com/trungkienhoadong/Swarm_Estate_Central_London.git
+   cd Swarm_Estate_Central_London
    ```
 
 2. **Install dependencies:**
