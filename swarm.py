@@ -123,7 +123,7 @@ if start_sim:
         metric_shield.metric("Shield Veto", f"{np.count_nonzero(agents_state == 2)}")
         metric_hunter.metric("Hunters", f"{np.count_nonzero(agents_state == 3)}")
 
-        time.sleep(0.2)
+        time.sleep(0.4)
 
     hunter_indices = np.where(agents_state == 3)[0]
     if len(hunter_indices) > 0:
@@ -175,3 +175,4 @@ if 'prime_target' in st.session_state:
             except Exception as e:
 
                 pass
+
