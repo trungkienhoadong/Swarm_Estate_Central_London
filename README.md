@@ -10,17 +10,17 @@ Institutional real estate investment in Prime Central London is traditionally sl
 ## Our Solution
 Swarm Estate is an autonomous algorithmic engine that treats real estate acquisition like high-frequency quantitative trading. Instead of manual screening, we deploy a "swarm" of AI agents to continuously scan, filter, and lock onto properties that meet strict, dynamically updated risk-reward thresholds.
 
-## Core Architecture & Tech Stack
+### Core Architecture & Tech Stack
 The system operates in a seamless pipeline, minimizing human latency:
 
-1. **The Oracle (Dust AI - RAG):** Ingests live institutional reports (e.g., Savills Autumn 2025) to extract current market baselines (Yield floors, Risk caps) for specific PCL postcodes (W11, W2, NW8).
-2. **The Engine (Python + NumPy):** Generates a multi-dimensional spatial simulation. Properties are treated as mathematical vectors.
-3. **The Swarm (Plotly + Streamlit):** Three tiers of autonomous agents interact with the dataset:
-   * **Scouts:** Survey the entire data landscape.
-   * **Shield Veto:** Instantly eliminate properties exceeding the Composite Risk Index (Market, Policy, ESG).
-   * **Hunters:** Lock onto the surviving assets that exceed the Target Yield Threshold.
-4. **The Brain (Google Gemini - DeepMind):** Performs rapid qualitative analysis on the "Hunted" assets to confirm the asymmetrical risk-reward profile.
-5. **The Executor (CodeWords + FastAPI):** Triggers an automated webhook, formatting the AI's analysis and instantly emailing the Chief Investment Officer (CIO) for final acquisition sign-off.
+1. **The Oracle (Dust AI - RAG):** Ingests live institutional reports (e.g., Savills Autumn 2025) to extract market baselines (Yield floors, Risk caps) for specific PCL postcodes.
+2. **The Engine (Python + NumPy):** Generates a multi-dimensional spatial simulation where properties are treated as mathematical vectors.
+3. **The Swarm Intelligence (Tiered Agents):** Three specialized groups of agents interact with the dataset:
+   * **🔵 Scouts (Blue):** Survey the entire data landscape to identify potential property coordinates.
+   * **🔴 Shield Veto (Red):** Risk-mitigation agents. They instantly filter out assets with high regulatory or market risk based on **Dust AI** constraints.
+   * **🟣 Hunters (Purple):** High-yield specialists. They lock onto assets that survive the Shield Veto and exhibit asymmetrical return profiles.
+4. **The Brain (Google Gemini - DeepMind):** Performs rapid qualitative analysis on the "Hunted" assets to confirm the investment thesis.
+5. **The Executor (CodeWords + FastAPI):** Triggers an automated webhook to instantly email the analysis to the Chief Investment Officer (CIO) for final sign-off.
 
 ## The Philosophy: Why Swarms?
 Rather than relying on a single, monolithic AI to make one slow decision, we utilize swarm intelligence logic. By breaking down the evaluation process into specialized, lightweight agents, the system can filter thousands of data points in real-time. It is a fundamental data structure approach: pruning the search tree aggressively before applying heavy computational analysis (LLMs) only to the absolute best candidates.
